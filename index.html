@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Article Preview Card — Практична робота 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<article class="card" aria-labelledby="art-title">
+  <div class="card__media" role="img" aria-label="Прев'ю статті — ілюстрація">
+    <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="600" height="400" fill="#5aa0ff"/>
+      <circle cx="480" cy="120" r="80" fill="#7fb8ff"/>
+      <rect x="48" y="48" width="240" height="120" rx="8" fill="#fff" opacity="0.14"/>
+    </svg>
+  </div>
+
+  <div class="card__body">
+    <header>
+      <h1 id="art-title">Змінюйте загальний вигляд, не змінюючи інструкції</h1>
+      <p>Короткий опис статті — декілька речень щоб зацікавити читача і показати тему.</p>
+    </header>
+
+    <div class="card__meta">
+      <div class="author">
+        <div class="avatar" aria-hidden="true">MA</div>
+        <div class="author__info">
+          <span class="author__name">Michelle Appleton</span>
+          <span class="author__date">28 June 2020</span>
+        </div>
+      </div>
+
+      <div class="share">
+        <button class="share-btn" id="shareBtn" aria-label="Поширити статтю" aria-expanded="false" title="Поширити">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7" stroke="#102a43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 3v14" stroke="#102a43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 8l5-5 5 5" stroke="#102a43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="share-menu" id="shareMenu" role="menu" aria-hidden="true" aria-label="Параметри шарингу">
+          <a class="social" href="#" role="menuitem">Facebook</a>
+          <a class="social" href="#" role="menuitem">Twitter</a>
+          <a class="social" href="#" role="menuitem">Pinterest</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
